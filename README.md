@@ -231,7 +231,7 @@ $$
 We use a structured prompt to ensure consistent output:
 
 $$
-P(\text{Explanation} | \text{JD}, \text{Resume}) = \text{LLM}(\pi(\text{JD}, \text{Resume}))
+P(\text{Explanation} \mid \text{JD}, \text{Resume}) = \text{LLM}(\pi(\text{JD}, \text{Resume}))
 $$
 
 where $\pi$ is our carefully designed prompt template.
@@ -241,7 +241,7 @@ where $\pi$ is our carefully designed prompt template.
 To reduce API costs, we cache responses using a hash-based lookup:
 
 $$
-\text{cache\_key} = \text{hash}(\text{JD}_{[:500]} \oplus \text{Resume}_{[:500]})
+\text{cache\_key} = \text{hash}\!\left(\text{JD}_{[:500]} \oplus \text{Resume}_{[:500]}\right)
 $$
 
 **Cache Hit Rate**: Empirically 34% on repeated queries, yielding **25% cost reduction**.
@@ -251,13 +251,12 @@ $$
 We lowered temperature from 0.7 → 0.3 for deterministic outputs:
 
 $$
-P(w_i \mid w_{<i}) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
+P(w_i \mid w_{<i}) = \frac{\exp(z_i / T)}{\sum_{j} \exp(z_j / T)}
 $$
 
 where $T = 0.3$ reduces entropy, improving consistency.
 
 ---
-
 ## 🏗️ Architecture Design
 
 ### System Components
