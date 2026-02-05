@@ -251,7 +251,7 @@ $$
 We lowered temperature from 0.7 → 0.3 for deterministic outputs:
 
 $$
-P(w_i | w_{<i}) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
+P(w_i \mid w_{<i}) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 $$
 
 where $T = 0.3$ reduces entropy, improving consistency.
@@ -1007,41 +1007,6 @@ If you use this work in your research, please cite:
 - [Dense Passage Retrieval (DPR)](https://arxiv.org/abs/2004.04906)
 - [Retrieve and Rerank Paradigm](https://arxiv.org/abs/1906.06519)
 - [MS MARCO Leaderboard](https://microsoft.github.io/msmarco/)
-
----
-
-## 📞 Contact & Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/resume-screening-pipeline/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/resume-screening-pipeline/discussions)
-- **Email**: your.email@example.com
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2026 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-```
 
 ---
 
